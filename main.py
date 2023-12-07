@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import requests
 
 # Meme_api at work
@@ -9,15 +9,17 @@ def get_meme():
 
     if response.status_code == 200:
         data = response.json()
-        return f"{data['postLink']}"
+        return f"{data['preview'] [2]}"
     else:
         return "Failed to get a reddit request, code no worky LOL"
-
+    
 app = Flask(__name__)
+web_var = get_meme()
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def meme_generator():
+    return render_template('index.html', web_var=web_var)
+
 
 if __name__ == '__main__':
-    print(get_meme())
+    app.run(debug=True)
