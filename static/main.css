@@ -2,10 +2,11 @@ body {
     text-align: center;
     padding: 4px;
     color: #fff;
-    background-color: #191919; 
+    background-color: #191919;
+    margin-top: 50px; 
 }
 
-.image_container{
+.image_container {
     margin-left: 450px;
     border: 10px outset rgb(255, 255, 255);
     text-align: center;
@@ -13,4 +14,12 @@ body {
     margin: auto;
     width: 50%;
     padding: 10px;
+}
+
+.author {
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 50px;
 }

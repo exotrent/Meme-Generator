@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/main.css">
-    <title>Meme Generator ඞ</title>
+    <title>Meme Generator</title>
 </head>
 <body>
+    <h1>useless site.jpeg</h1>
     <div class="image_container">
         <img src="{{ web_var }}" alt="" />
+    </div>
+    <h2>Subreddit: r/memes</h2>
+    <p class="author">Author: {{ author }}</p>
+    <div class="container">
+        <p class="text">Proudly Made by Trent ඞ</p>
+        <a class="fa" href="https://github.com/exotrent" target="_blank" style="font-size: 26px">&#xf09b; exotrent</a>
     </div>
 </body>
 </html>
