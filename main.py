@@ -12,7 +12,8 @@ def get_meme():
         return f"{data['preview'] [2]}"
     else:
         return "Failed to get a reddit request, code no worky LOL"
-    
+
+# Vars    
 app = Flask(__name__)
 web_var = get_meme()
 
