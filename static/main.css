@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    padding: 4px;
+    color: #fff;
+    background-color: #191919; 
+}
+
+.image_container{
+    margin-left: 450px;
+    border: 10px outset rgb(255, 255, 255);
+    text-align: center;
+    border: 2px solid;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
